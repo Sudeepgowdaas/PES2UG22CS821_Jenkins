@@ -3,11 +3,11 @@ pipeline {
 
     stages {
         stage('Build') {
-            steps {
-                build 'PES2UG22CS821-1'
-                sh 'g++ working.cpp -o output'
-            }
+    steps {
+            sh 'invalid_command'
         }
+    }
+
         stage('Test') {
             steps {
                 sh './output'
