@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ main.cpp -o output'
+                build 'PES2UG22CS821-1'
+                sh 'g++ working.cpp -o output'
             }
         }
         stage('Test') {
@@ -14,7 +15,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                // Add deployment steps here
+                echo 'deploy'
             }
         }
     }
